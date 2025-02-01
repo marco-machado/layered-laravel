@@ -1,0 +1,19 @@
+includes:
+    - vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    # Set the level of analysis: 0 (basic) to 9 (very strict)
+    level: 5
+
+    # Paths to analyze
+    paths:
+        - app
+        - routes
+        - database
+        - tests
+
+    # Files and directories to exclude from analysis
+    excludePaths:
+        - bootstrap/cache/*
+        - storage/*
+        - vendor/*
