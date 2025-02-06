@@ -3,14 +3,13 @@ includes:
 
 parameters:
     # Set the level of analysis: 0 (basic) to 9 (very strict)
-    level: 5
+    level: max
 
     # Paths to analyze
     paths:
         - app
         - routes
         - database
-        - tests
 
     # Files and directories to exclude from analysis
     excludePaths:
